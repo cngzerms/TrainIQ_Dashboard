@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# TrainIQ Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TrainIQ Dashboard, bir eğitim platformunun istatistiklerini ve detaylarını görselleştiren bir kullanıcı arayüzüdür.
 
-## Available Scripts
+## Proje Açıklaması
 
-In the project directory, you can run:
+Bu proje, sahte bir şirketin eğitim platformunun istatistiklerini görselleştirmek için oluşturulmuştur. Şirket içinde tanımlı bazı takımlar bulunmakta ve her takımın altında birçok çalışan bulunmaktadır. Her çalışan için tamamlanması gereken bazı kurslar ve sınavlar bulunmaktadır. Alınan dersler ve sınav notlarına göre, her çalışanın mevcut bir puanı ve geliştirilen becerileri bulunmaktadır. Ayrıca, şirketin kaç çalışanı olduğu, toplam tamamlanan kurs sayısı gibi bazı toplu istatistikler bulunmaktadır.
 
-### `npm start`
+## Kullanılan Teknolojiler
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bu proje, front-end geliştirme için HTML, CSS ve JavaScript kullanılarak oluşturulmuştur. Veriler, sağlanan backend API'dan alınmaktadır.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- HTML
+- CSS
+- React.Js
 
-### `npm test`
+## Kullanılan Kütüphaneler
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Proje geliştirilirken aşağıdaki kütüphanelerden faydalanılmıştır:
 
-### `npm run build`
+- [AntDesign](https://ant.design/) - Bileşenleri oluşturmak için kullanılmıştır.
+- [Chart.js](https://www.chartjs.org/) - Grafikler oluşturmak için kullanılmıştır.
+- [ReactChart.js](https://react-chartjs-2.js.org/) - Grafikler oluşturmak için kullanılmıştır.
+- [Axios](https://axios-http.com/) - İlgili Api'ye istek atmak için kullanılmıştır.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Nasıl Çalıştırılır
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Projeyi klonlayın:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/kullaniciadi/projeadi.git
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Proje bağımlılıklarını yükleyin:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Projeyi çalıştırın:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   npm start

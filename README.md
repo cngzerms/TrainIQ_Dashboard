@@ -1,5 +1,7 @@
 # TrainIQ Dashboard
 
+train-iq-dashboard.vercel.app
+
 TrainIQ Dashboard, bir eğitim platformunun istatistiklerini ve detaylarını görselleştiren bir kullanıcı arayüzüdür.
 
 ## Proje Açıklaması

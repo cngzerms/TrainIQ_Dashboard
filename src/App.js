@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import TopSkills from "./components/TopSkills";
+import Employees from "./components/Employees";
+import Dashboard from "./components/Dashboard";
+import ActivityHours from "./components/ActivityHours";
+import UpcomingCourses from "./components/UpcomingCourses";
+import Teams from "./components/Teams";
+import { DataProvider } from "./context";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataProvider>
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/employees" element={<Employees />} />
+            <Route path="/top-skills" element={<TopSkills />} />
+            <Route path="/activity-hours" element={<ActivityHours />} />
+            <Route path="/upcoming-courses" element={<UpcomingCourses />} />
+            <Route path="/teams" element={<Teams />} />
+          </Routes>
+        </div>
+      </Router>
+    </DataProvider>
   );
 }
-
 export default App;
